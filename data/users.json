@@ -1,0 +1,34 @@
+[
+  {
+    "user_id": "admin",
+    "display_name": "Administrator",
+    "role": "Admin",
+    "active": true,
+    "salt": "65f262562f6b99ffb400bfab8073be26",
+    "hash": "e2c0670dae6a4ef74edcf3d29a32487c6d5d0dea5b163853863f495ec26c8669"
+  },
+  {
+    "user_id": "editor01",
+    "display_name": "Editor One",
+    "role": "Editor",
+    "active": true,
+    "salt": "e71bc7e846695a5a4cbd020ca53430cb",
+    "hash": "6f2e54fb8bab9b45319b246ff2985f8f20321e5f04983cdee806b845469ea24f"
+  },
+  {
+    "user_id": "sales01",
+    "display_name": "Sales One",
+    "role": "Sales",
+    "active": true,
+    "salt": "f389b33e10339dbbac2bb7747c3ccc95",
+    "hash": "20e25f1caf920a9e8f37d9603bedab9ccb18b55ffe8ddc06e9c9df5261e15c83"
+  },
+  {
+    "user_id": "olduser",
+    "display_name": "Disabled User",
+    "role": "Sales",
+    "active": false,
+    "salt": "f6cf83ab612a2626b73eb0ddbda1f71a",
+    "hash": "d2d7323b820daed4728d43126a87360e7b26f5605f06dbcac831b39190b63cdc"
+  }
+]

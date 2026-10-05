@@ -1,0 +1,56 @@
+[
+  { "section": "identity", "label": "Project Identity", "fields": [
+    { "key": "project_name", "label": "Project Name", "type": "text", "required": true },
+    { "key": "developer_id", "label": "Developer", "type": "select", "source": "developers", "required": true },
+    { "key": "city_id", "label": "City", "type": "select", "source": "cities", "required": true },
+    { "key": "location_id", "label": "Location", "type": "select", "source": "locations", "required": true },
+    { "key": "sub_location", "label": "Sub-location", "type": "text" },
+    { "key": "landmark", "label": "Landmark", "type": "text" }
+  ]},
+  { "section": "details", "label": "Project Overview", "fields": [
+    { "key": "purpose", "label": "Purpose", "type": "select", "source": "master:purposes" },
+    { "key": "launch_stage", "label": "Launch Stage", "type": "select", "source": "master:launch_stages" },
+    { "key": "project_status", "label": "Project Status", "type": "select", "source": "master:project_statuses" },
+    { "key": "launch_date", "label": "Launch Date", "type": "month" },
+    { "key": "developer_possession", "label": "Developer Possession", "type": "month" },
+    { "key": "rera_possession", "label": "RERA Possession", "type": "month" },
+    { "key": "land_parcel", "label": "Land Parcel", "type": "text" },
+    { "key": "land_parcel_acres", "label": "Land Parcel (acres, numeric)", "type": "number" },
+    { "key": "open_space", "label": "Open Space", "type": "text" },
+    { "key": "rera_numbers", "label": "RERA Numbers", "type": "list" },
+    { "key": "last_updated", "label": "Last Updated", "type": "date" },
+    { "key": "data_source", "label": "Data Source", "type": "text" }
+  ]},
+  { "section": "configurations", "label": "Configurations", "special": "configurations" },
+  { "section": "towers", "label": "Towers", "special": "towers" },
+  { "section": "parking", "label": "Parking", "fields": [
+    { "key": "parking_basement", "label": "Basement Levels", "type": "number" },
+    { "key": "parking_stilt", "label": "Stilt Levels", "type": "number" },
+    { "key": "parking_podium", "label": "Podium Levels", "type": "number" },
+    { "key": "parking_structure", "label": "Parking Structure", "type": "text" }
+  ]},
+  { "section": "amenities", "label": "Amenities & USPs", "fields": [
+    { "key": "amenities", "label": "Amenities", "type": "list" },
+    { "key": "usp_resident", "label": "Residential USP", "type": "list", "recommended": true },
+    { "key": "usp_investment", "label": "Investment USP", "type": "list", "recommended": true }
+  ]},
+  { "section": "location", "label": "Location & Connectivity", "fields": [
+    { "key": "lat", "label": "Latitude", "type": "number", "hide_in_overview": true },
+    { "key": "lng", "label": "Longitude", "type": "number", "hide_in_overview": true },
+    { "key": "connectivity", "label": "Connectivity", "type": "list", "recommended": true },
+    { "key": "location_advantages", "label": "Location Advantages", "type": "list" },
+    { "key": "other_location_remarks", "label": "Other Location Remarks", "type": "list" }
+  ]},
+  { "section": "commercial", "label": "Commercial Information", "fields": [
+    { "key": "payment_plans", "label": "Payment Plans", "type": "list" },
+    { "key": "about_developer", "label": "Developer", "type": "list" },
+    { "key": "objection_handling", "label": "Objection Handling", "type": "list" },
+    { "key": "other_remarks", "label": "Other Remarks", "type": "list" },
+    { "key": "internal_notes", "label": "Internal Notes (Admin/Editor only)", "type": "list", "internal": true }
+  ]},
+  { "section": "eoi", "label": "EOI / Offers", "fields": [
+    { "key": "offers", "label": "Current Offers", "type": "list" },
+    { "key": "eoi_type", "label": "EOI Type", "type": "select", "source": "master:eoi_types" },
+    { "key": "eoi_remarks", "label": "EOI Remarks", "type": "text" }
+  ]}
+]

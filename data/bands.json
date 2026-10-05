@@ -1,0 +1,25 @@
+{
+  "price": [
+    { "label": "Below ₹80 L", "lower": null, "upper": 7999999, "order": 1, "active": true },
+    { "label": "₹80 L – 1 Cr", "lower": 8000000, "upper": 9999999, "order": 2, "active": true },
+    { "label": "₹1 – 1.5 Cr", "lower": 10000000, "upper": 14999999, "order": 3, "active": true },
+    { "label": "₹1.5 – 2 Cr", "lower": 15000000, "upper": 19999999, "order": 4, "active": true },
+    { "label": "₹2 – 3 Cr", "lower": 20000000, "upper": 29999999, "order": 5, "active": true },
+    { "label": "₹3 – 4 Cr", "lower": 30000000, "upper": 39999999, "order": 6, "active": true },
+    { "label": "₹4 – 5 Cr", "lower": 40000000, "upper": 49999999, "order": 7, "active": true },
+    { "label": "Above ₹5 Cr", "lower": 50000000, "upper": null, "order": 8, "active": true }
+  ],
+  "carpet": [
+    { "label": "Below 750 sq.ft.", "lower": null, "upper": 749, "order": 1, "active": true },
+    { "label": "750 – 1,000 sq.ft.", "lower": 750, "upper": 999, "order": 2, "active": true },
+    { "label": "1,000 – 1,500 sq.ft.", "lower": 1000, "upper": 1499, "order": 3, "active": true },
+    { "label": "1,500 – 2,000 sq.ft.", "lower": 1500, "upper": 1999, "order": 4, "active": true },
+    { "label": "2,000 – 2,500 sq.ft.", "lower": 2000, "upper": 2499, "order": 5, "active": true },
+    { "label": "Above 2,500 sq.ft.", "lower": 2500, "upper": null, "order": 6, "active": true }
+  ],
+  "elevation": [
+    { "label": "Low Rise", "lower": 0, "upper": 4, "order": 1, "active": true },
+    { "label": "Mid Rise", "lower": 5, "upper": 7, "order": 2, "active": true },
+    { "label": "High Rise", "lower": 8, "upper": null, "order": 3, "active": true }
+  ]
+}

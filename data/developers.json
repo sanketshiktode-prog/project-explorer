@@ -1,0 +1,32 @@
+[
+  {
+    "developer_id": "DEV001",
+    "name": "Godrej Properties",
+    "active": true
+  },
+  {
+    "developer_id": "DEV002",
+    "name": "L&T Realty",
+    "active": true
+  },
+  {
+    "developer_id": "DEV003",
+    "name": "Hiranandani",
+    "active": true
+  },
+  {
+    "developer_id": "DEV004",
+    "name": "Paradise Group",
+    "active": true
+  },
+  {
+    "developer_id": "DEV005",
+    "name": "K Raheja",
+    "active": true
+  },
+  {
+    "developer_id": "DEV900",
+    "name": "Sample Developer Ltd",
+    "active": true
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "cities": [
+    {
+      "city_id": "NAVI_MUMBAI",
+      "name": "Navi Mumbai",
+      "active": true
+    },
+    {
+      "city_id": "RAIGAD",
+      "name": "Raigad (Alibaug)",
+      "active": true
+    },
+    {
+      "city_id": "PUNE",
+      "name": "Pune",
+      "active": true
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "SANPADA",
+      "city_id": "NAVI_MUMBAI",
+      "name": "Sanpada",
+      "lat": 19.0626,
+      "lng": 73.0103,
+      "active": true
+    },
+    {
+      "location_id": "KHARGHAR",
+      "city_id": "NAVI_MUMBAI",
+      "name": "Kharghar",
+      "lat": 19.033,
+      "lng": 73.0697,
+      "active": true
+    },
+    {
+      "location_id": "PANVEL",
+      "city_id": "NAVI_MUMBAI",
+      "name": "Panvel",
+      "lat": 18.9894,
+      "lng": 73.1175,
+      "active": true
+    },
+    {
+      "location_id": "ALIBAUG",
+      "city_id": "RAIGAD",
+      "name": "Alibaug",
+      "lat": 18.6414,
+      "lng": 72.8722,
+      "active": true
+    },
+    {
+      "location_id": "JUINAGAR",
+      "city_id": "NAVI_MUMBAI",
+      "name": "Juinagar",
+      "lat": 19.0532,
+      "lng": 73.018,
+      "active": true
+    },
+    {
+      "location_id": "HINJEWADI",
+      "city_id": "PUNE",
+      "name": "Hinjewadi",
+      "lat": 18.5912,
+      "lng": 73.7389,
+      "active": true
+    }
+  ]
+}

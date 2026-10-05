@@ -1,0 +1,17 @@
+[
+  { "key": "city", "label": "City", "type": "select", "level": "project", "field": "city_id", "source": "cities", "order": 1, "active": true, "multiple": true },
+  { "key": "location", "label": "Location", "type": "select", "level": "project", "field": "location_id", "source": "locations", "depends_on": "city", "order": 2, "active": true, "multiple": true },
+  { "key": "sub_location", "label": "Sub-location", "type": "select", "level": "project", "field": "sub_location", "source": "values", "depends_on": "location", "order": 3, "active": true, "multiple": true },
+  { "key": "developer", "label": "Developer", "type": "select", "level": "project", "field": "developer_id", "source": "developers", "order": 4, "active": true, "multiple": true },
+  { "key": "configuration", "label": "Configuration", "type": "select", "level": "configuration", "field": "configuration", "source": "master:configurations", "order": 5, "active": true, "multiple": true },
+  { "key": "price", "label": "Price", "type": "range", "level": "configuration", "field": "price_from", "field_to": "price_to", "min": 0, "max": 100000000, "step": 500000, "unit": "INR", "bands": "price", "order": 6, "active": true },
+  { "key": "carpet", "label": "Carpet Area", "type": "range", "level": "configuration", "field": "carpet_from", "field_to": "carpet_to", "min": 300, "max": 3000, "step": 25, "unit": "sq.ft.", "bands": "carpet", "order": 7, "active": true },
+  { "key": "launch_stage", "label": "Launch Stage", "type": "select", "level": "project", "field": "launch_stage", "source": "master:launch_stages", "order": 8, "active": true, "multiple": true },
+  { "key": "dev_possession", "label": "Developer Possession", "type": "range", "level": "project", "field": "_dev_year", "min": 2026, "max": 2035, "step": 1, "unit": "year", "order": 9, "active": true },
+  { "key": "rera_possession", "label": "RERA Possession", "type": "range", "level": "project", "field": "_rera_year", "min": 2026, "max": 2035, "step": 1, "unit": "year", "order": 10, "active": true },
+  { "key": "project_status", "label": "Project Status", "type": "select", "level": "project", "field": "project_status", "source": "master:project_statuses", "order": 11, "active": true, "multiple": true },
+  { "key": "purpose", "label": "Purpose", "type": "select", "level": "project", "field": "purpose", "source": "master:purposes", "order": 12, "active": true, "multiple": true,
+    "also_matches": { "Residence": ["Both"], "Investment": ["Both"] } },
+  { "key": "elevation", "label": "Elevation", "type": "select", "level": "project", "field": "_elevation", "source": "bands:elevation", "order": 13, "active": true, "multiple": true },
+  { "key": "land_parcel", "label": "Land Parcel", "type": "range", "level": "project", "field": "land_parcel_acres", "min": 0, "max": 600, "step": 1, "unit": "acres", "order": 14, "active": false }
+]
