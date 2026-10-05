@@ -1,0 +1,32 @@
+// Cloudflare Workers config: frontend (static assets) + API (Express on Workers) in one deployment.
+// The only line you must edit is the Hyperdrive "id" below (Cloudflare → Hyperdrive → your config → ID).
+{
+  "name": "project-explorer",
+  "main": "server/src/worker.js",
+  "compatibility_date": "2025-09-15",
+  "compatibility_flags": ["nodejs_compat"],
+
+  // React build is served directly by Cloudflare; only /api/* runs the Worker.
+  "assets": {
+    "directory": "./client/dist",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+
+  // Fast, pooled connection to the Neon Postgres database.
+  "hyperdrive": [
+    { "binding": "HYPERDRIVE", "id": "PASTE_HYPERDRIVE_ID_HERE" }
+  ],
+
+  // Non-secret settings. Secrets (GOOGLE_CLIENT_ID) are added in the dashboard and are kept.
+  "vars": {
+    "NODE_ENV": "production",
+    "COOKIE_SECURE": "true",
+    "ALLOWED_GOOGLE_DOMAIN": "propertypistol.com",
+    "BOOTSTRAP_ADMIN_EMAILS": "hemant.bajaj@propertypistol.com",
+    "SEED_ON_EMPTY": "production",
+    "META_CACHE_TTL_MS": "20000"
+  },
+  "keep_vars": true,
+  "observability": { "enabled": true }
+}
