@@ -15,7 +15,7 @@
 
   // Fast, pooled connection to the Neon Postgres database.
   "hyperdrive": [
-    { "binding": "HYPERDRIVE", "id": "PASTE_HYPERDRIVE_ID_HERE" }
+    { "binding": "HYPERDRIVE", "id": "ecf0636d4252433bb6157dbb63c488aa" }
   ],
 
   // Non-secret settings. Secrets (GOOGLE_CLIENT_ID) are added in the dashboard and are kept.
